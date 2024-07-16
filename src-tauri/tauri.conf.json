@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "smp-panel",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
@@ -42,7 +42,7 @@
     "updater": {
       "active": true,
       "dialog": true,
-      "endpoints": [],
+      "endpoints": ["https://smp.chadulous.me"],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDFDRjA3RDZCOENDMTM2NDQKUldSRU5zR01hMzN3SElGNDFTcWQyaWlReXl6cXA0NXdHa1ROQXFqMlcraTNtZ0ZFeVNKbkg2M3YK"
     }
   }
