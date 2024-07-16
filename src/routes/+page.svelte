@@ -1,5 +1,6 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/tauri";
+  import { checkUpdate } from "@tauri-apps/api/updater";
 
   let name = "";
   let greetMsg = "";
@@ -18,7 +19,7 @@
   <h1>Uhh panel thingy!</h1>
 
   <button on:click={boot}>Boot up server!</button>
-  <button>Check for updates</button>
+  <button on:click={checkUpdate}>Check for updates</button>
 
   <p>Not much here yet!</p>
 </div>
