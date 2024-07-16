@@ -53,6 +53,12 @@ jobs:
       - name: install frontend dependencies
         # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
         run: npm install # change this to npm or pnpm depending on which one you use.
+      - name: Create app env
+        uses: 1arp/create-a-file-action@0.4.5
+        with:
+          path: './src-tauri'
+          file: '.env'
+          content: 'API_KEY="${{ secrets.API_KEY }}"'
 
       - uses: tauri-apps/tauri-action@v0
         env:
