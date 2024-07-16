@@ -17,7 +17,8 @@
 <div class="container">
   <h1>Uhh panel thingy!</h1>
 
-  <button on:click={boot}>Boot</button>
+  <button on:click={boot}>Boot up server!</button>
+  <button>Check for updates</button>
 
   <p>Not much here yet!</p>
 </div>
